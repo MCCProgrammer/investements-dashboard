@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Investimentos</title>
+    <title>Investment Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Dashboard de Investimentos</h1>
+    <h1>Investment Dashboard</h1>
     <div class="container">
         <div class="chart-container">
             <div class="total-value" id="totalInvested"></div>
-            <h2>Total Investido</h2>
+            <h2>Total Invested</h2>
             <canvas id="investedChart"></canvas>
         </div>
         <div class="chart-container">
             <div class="total-value" id="totalCurrent"></div>
-            <h2>Valor Atual</h2>
+            <h2>Current Value</h2>
             <canvas id="currentChart"></canvas>
         </div>
     </div>
-    <h2>Rendimentos por Percentual</h2>
+    <h2>Returns by Percentage</h2>
     <ul id="investmentList" class="list"></ul>
-    
+
     <div class="input-container">
-        <h2>Adicionar/Editar Investimentos</h2>
+        <h2>Add/Edit Investments</h2>
         <input type="text" id="name" placeholder="Nome do Investimento">
         <input type="number" id="invested" placeholder="Valor Investido">
         <input type="number" id="current" placeholder="Valor Atual">
-        <button onclick="addInvestment()">Adicionar/Atualizar</button>
+        <button onclick="addInvestment()">Add/Update</button>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
